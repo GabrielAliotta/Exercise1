@@ -20,6 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message Box" message:@"Hello World" delegate:self cancelButtonTitle:@"Ok Bye" otherButtonTitles:nil, nil];
+    
+    [alert show];
+    [alert release];
      
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
